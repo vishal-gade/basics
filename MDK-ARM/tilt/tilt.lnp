@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"tilt\startup_stm32f303xe.o"
+"tilt\tj_mpu6050.o"
+"tilt\main.o"
+"tilt\stm32f3xx_it.o"
+"tilt\stm32f3xx_hal_msp.o"
+"tilt\stm32f3xx_hal_adc.o"
+"tilt\stm32f3xx_hal_adc_ex.o"
+"tilt\stm32f3xx_hal_i2c.o"
+"tilt\stm32f3xx_hal_i2c_ex.o"
+"tilt\stm32f3xx_hal_tim.o"
+"tilt\stm32f3xx_hal_tim_ex.o"
+"tilt\stm32f3xx_hal.o"
+"tilt\stm32f3xx_hal_rcc.o"
+"tilt\stm32f3xx_hal_rcc_ex.o"
+"tilt\stm32f3xx_hal_gpio.o"
+"tilt\stm32f3xx_hal_dma.o"
+"tilt\stm32f3xx_hal_cortex.o"
+"tilt\stm32f3xx_hal_pwr.o"
+"tilt\stm32f3xx_hal_pwr_ex.o"
+"tilt\stm32f3xx_hal_flash.o"
+"tilt\stm32f3xx_hal_flash_ex.o"
+"tilt\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "tilt\tilt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tilt.map" -o tilt\tilt.axf
